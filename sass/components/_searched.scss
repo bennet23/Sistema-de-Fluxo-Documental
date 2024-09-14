@@ -1,0 +1,25 @@
+.searched {
+  background-color: $color-grey-light-4;
+  padding: 3rem;
+  margin-bottom: 4rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+
+  &:hover {
+    background-color: $color-grey-light-2;
+  }
+
+  &-box {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 40px;
+
+    &__image {
+      width: 68px;
+      height: 68px;
+      border-radius: 100px;
+    }
+  }
+}

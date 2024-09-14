@@ -1,0 +1,295 @@
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// MEDIA QUERY MANAGER
+/*
+  0 - 600px:      Phone
+  600 - 900px:    Tablet portrait
+  900 - 1200px:   Tablet landscape
+  [1200 - 1800] is where our normal styles apply
+  1800px + :      Big Desktop
+  
+  $breakpoint argument choices:
+  - phone
+  - tab-port
+  - tab-land
+  - big-desktop
+  
+  ORDER: Base + typography > general layout + grid > page layout > components`
+  
+  1em = 16px
+  
+  Rem's and Em's on the media querrys arent affected by the base font defined by the developer in the body, but instead
+  they are defined based on the users we font size which is 16px by default
+  */
+
+@mixin respondWidth($breakpoint) {
+  @if $breakpoint == -200 {
+    @media only screen and (max-width: 12.5em) {
+      @content;
+    } //200px
+  }
+  @if $breakpoint == -250 {
+    @media only screen and (max-width: 15.625em) {
+      @content;
+    } //250px
+  }
+  @if $breakpoint == -300 {
+    @media only screen and (max-width: 18.75em) {
+      @content;
+    } //300px
+  }
+  @if $breakpoint == + 300 {
+    @media only screen and (min-width: 18.75em) {
+      @content;
+    } //300px
+  }
+  @if $breakpoint == -350 {
+    @media only screen and (max-width: 21.875em) {
+      @content;
+    } //350px
+  }
+  @if $breakpoint == -400 {
+    @media only screen and (max-width: 25em) {
+      @content;
+    } //400px
+  }
+  @if $breakpoint == + 400 {
+    @media only screen and (min-width: 25em) {
+      @content;
+    } //400px
+  }
+  @if $breakpoint == -450 {
+    @media only screen and (max-width: 28.125em) {
+      @content;
+    } //450px
+  }
+  @if $breakpoint == -500 {
+    @media only screen and (max-width: 31.25em) {
+      @content;
+    } //500px
+  }
+  @if $breakpoint == -550 {
+    @media only screen and (max-width: 34.375em) {
+      @content;
+    } //550px
+  }
+  @if $breakpoint == -600 {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == -700 {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    } //700px
+  }
+  @if $breakpoint == + 700 {
+    @media only screen and (min-width: 43.75em) {
+      @content;
+    } //700px
+  }
+  @if $breakpoint == -800 {
+    @media only screen and (max-width: 50em) {
+      @content;
+    } //800px
+  }
+  @if $breakpoint == -900 {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == -950 {
+    @media only screen and (max-width: 59.375em) {
+      @content;
+    } //950px
+  }
+  @if $breakpoint == -1000 {
+    @media only screen and (max-width: 62.5em) {
+      @content;
+    } //1000px
+  }
+  @if $breakpoint == + 1000 {
+    @media only screen and (min-width: 62.5em) {
+      @content;
+    } //1000px
+  }
+  @if $breakpoint == -1100 {
+    @media only screen and (max-width: 68.75em) {
+      @content;
+    } //1100px
+  }
+  @if $breakpoint == + 1100 {
+    @media only screen and (min-width: 68.75em) {
+      @content;
+    } //1100px
+  }
+  @if $breakpoint == -1200 {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == -1300 {
+    @media only screen and (max-width: 81.25em) {
+      @content;
+    } //1300px
+  }
+  @if $breakpoint == + 1300 {
+    @media only screen and (min-width: 81.25em) {
+      @content;
+    } //1300px
+  }
+  @if $breakpoint == -1400 {
+    @media only screen and (max-width: 87.5em) {
+      @content;
+    } //1400px
+  }
+  @if $breakpoint == -1500 {
+    @media only screen and (max-width: 93.75em) {
+      @content;
+    } //1500px
+  }
+  //criado por mim
+  @if $breakpoint == -1700 {
+    @media only screen and (max-width: 106.25em) {
+      @content;
+    } //1700px
+  }
+  @if $breakpoint == -1800 {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+  @if $breakpoint == + 1800 {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+  @if $breakpoint == -2000 {
+    @media only screen and (max-width: 125em) {
+      @content;
+    } //2000px
+  }
+  @if $breakpoint == + 2000 {
+    @media only screen and (min-width: 125em) {
+      @content;
+    } //2000px
+  }
+}
+
+@mixin respondHeight($breakpoint) {
+  @if $breakpoint == -200 {
+    @media only screen and (max-height: 12.5em) {
+      @content;
+    } //200px
+  }
+  @if $breakpoint == + 200 {
+    @media only screen and (min-height: 12.5em) {
+      @content;
+    } //200px
+  }
+  @if $breakpoint == -250 {
+    @media only screen and (max-height: 15.625em) {
+      @content;
+    } //250px
+  }
+  @if $breakpoint == + 250 {
+    @media only screen and (min-height: 15.625em) {
+      @content;
+    } //250px
+  }
+  @if $breakpoint == -300 {
+    @media only screen and (max-height: 18.75em) {
+      @content;
+    } //300px
+  }
+  @if $breakpoint == + 300 {
+    @media only screen and (min-height: 18.75em) {
+      @content;
+    } //300px
+  }
+  @if $breakpoint == -350 {
+    @media only screen and (max-height: 21.875em) {
+      @content;
+    } //350px
+  }
+  @if $breakpoint == -400 {
+    @media only screen and (max-height: 25em) {
+      @content;
+    } //400px
+  }
+  @if $breakpoint == + 400 {
+    @media only screen and (min-height: 25em) {
+      @content;
+    } //400px
+  }
+  @if $breakpoint == -450 {
+    @media only screen and (max-height: 28.125em) {
+      @content;
+    } //450px
+  }
+  @if $breakpoint == -500 {
+    @media only screen and (max-height: 31.25em) {
+      @content;
+    } //500px
+  }
+  @if $breakpoint == + 500 {
+    @media only screen and (min-height: 31.25em) {
+      @content;
+    } //500px
+  }
+  @if $breakpoint == -600 {
+    @media only screen and (max-height: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == + 600 {
+    @media only screen and (min-height: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == -700 {
+    @media only screen and (max-height: 43.75em) {
+      @content;
+    } //700px
+  }
+  @if $breakpoint == + 700 {
+    @media only screen and (min-height: 43.75em) {
+      @content;
+    } //700px
+  }
+  @if $breakpoint == -800 {
+    @media only screen and (max-height: 50em) {
+      @content;
+    } //800px
+  }
+  @if $breakpoint == + 800 {
+    @media only screen and (min-height: 50em) {
+      @content;
+    } //800px
+  }
+  @if $breakpoint == -900 {
+    @media only screen and (max-height: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == + 900 {
+    @media only screen and (min-height: 56.25em) {
+      @content;
+    } //900px
+  }
+  @if $breakpoint == -1000 {
+    @media only screen and (max-height: 62.5em) {
+      @content;
+    } //1000px
+  }
+  @if $breakpoint == + 1000 {
+    @media only screen and (min-height: 62.5em) {
+      @content;
+    } //1000px
+  }
+}

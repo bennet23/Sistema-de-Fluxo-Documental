@@ -1,0 +1,34 @@
+.btn {
+  border: none;
+  font-family: "Gill Sans", sans-serif;
+  line-height: 1;
+  font-size: $default-font-size;
+  padding: 1.6rem 0 1.3rem;
+  color: inherit;
+  border-radius: 3rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: $color-grey-light-1;
+}
+
+.btn-large {
+  font-size: 20px;
+  padding: 2rem 3.2rem 1.7rem;
+}
+
+.btn-all-categories {
+  margin-bottom: 1.6rem;
+  width: 100%;
+}
+
+.btn-category {
+  width: 100%;
+  background-image: none;
+}
+
+.btn--anexar {
+  margin-bottom: 0rem;
+}

@@ -1,0 +1,87 @@
+.User {
+  width: 25vw;
+  position: absolute;
+  bottom: -22rem;
+  right: 2rem;
+  display: none;
+
+  &-active {
+    display: grid;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 2rem;
+    border-radius: 1rem 1rem 0 0;
+    background-color: $color-grey-light-2;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+    }
+
+    &-title {
+      font-size: $default-font-size;
+    }
+    ion-icon {
+      font-size: 2.25rem;
+      cursor: pointer;
+    }
+  }
+
+  &__body {
+    display: grid;
+    list-style: none;
+    text-decoration: none;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: $color-grey-light-5;
+
+    &-element {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1rem;
+      column-gap: 2rem;
+      background-color: $color-grey-light-3;
+      border-radius: 3rem;
+
+      img {
+        height: 7.5rem;
+        border-radius: 50%;
+      }
+      p {
+        display: grid;
+        gap: 0.5rem;
+      }
+    }
+    &-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 3rem;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: scale(103%);
+      }
+    }
+    &-img {
+    }
+    &-text {
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+}

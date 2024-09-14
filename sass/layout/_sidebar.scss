@@ -1,0 +1,11 @@
+.sidebar {
+  &-list {
+    list-style: none;
+
+    .sidebar-element {
+      .sidebar-button {
+        text-transform: initial;
+      }
+    }
+  }
+}

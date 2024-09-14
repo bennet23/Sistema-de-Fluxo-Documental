@@ -1,0 +1,189 @@
+.u-center-text {
+  text-align: center !important;
+}
+
+.u-margin-bottom-gigantic {
+  margin-bottom: 10rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-bottom: 5rem !important;
+    }
+  }
+}
+
+.u-margin-bottom-huge {
+  margin-bottom: 8rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-bottom: 4rem !important;
+    }
+  }
+}
+
+.u-margin-bottom-big {
+  margin-bottom: 6rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-bottom: 3rem !important;
+    }
+  }
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-bottom: 1rem !important;
+    }
+  }
+}
+
+.u-margin-bottom-tiny {
+  margin-bottom: 1.5rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-bottom: 0.75rem !important;
+    }
+  }
+}
+
+.u-margin-bottom-micro {
+  margin-bottom: 1rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-bottom: 0.5rem !important;
+    }
+  }
+}
+
+.u-margin-top-gigantic {
+  margin-top: 10rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-top: 5rem !important;
+    }
+  }
+}
+
+.u-margin-top-huge {
+  margin-top: 8rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-top: 4rem !important;
+    }
+  }
+}
+
+.u-margin-top-big {
+  margin-top: 6rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-top: 3rem !important;
+    }
+  }
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-top: 2rem !important;
+    }
+  }
+}
+
+.u-margin-top-small {
+  margin-top: 2rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-top: 1rem !important;
+    }
+  }
+}
+
+.u-margin-top-tiny {
+  margin-top: 1.5rem !important;
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */
+    @include respondWidth(-600) {
+      margin-top: 0.75rem !important;
+    }
+  }
+}
+
+//ALIGN GRID ITEM
+.u-grid-align-self-start {
+  align-self: start;
+}
+.u-grid-align-self-center {
+  align-self: center;
+}
+.u-grid-align-self-end {
+  align-self: end;
+}
+.u-grid-align-self-stretch {
+  align-self: stretch;
+}
+
+//JUSTIFY GRID ITEM
+.u-grid-justify-self-start {
+  justify-self: start;
+}
+.u-grid-justify-self-center {
+  justify-self: center;
+}
+.u-grid-justify-self-end {
+  justify-self: end;
+}
+.u-grid-justify-self-stretch {
+  justify-self: stretch;
+}
+
+//Text Align
+.u-text-align-center {
+  text-align: center !important;
+}
+
+.u-text-align-justify {
+  text-align: justify;
+}
+
+//max-width
+.u-max-width-80 {
+  max-width: 100rem;
+  height: auto;
+}
+
+.u-max-width-fit-content {
+  max-width: fit-content;
+}
+
+//display block
+.u-display-block {
+  display: block;
+}
+
+.u-span-2 {
+  grid-column: span 2;
+}
